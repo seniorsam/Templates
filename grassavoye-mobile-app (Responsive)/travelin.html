@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grassavoye mobile application v.1</title>
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.css">
+<link href="jquery-mobile/stylesheet.css" rel="stylesheet" type="text/css">
+<!-- Include the jQuery library -->
+<script src="jquery-mobile/jquery-1.11.3.min.js"></script>
+<script src="jquery-mobile/jquery.validate.min.js"></script>
+<!-- Include the jQuery Mobile library -->
+<script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<!--this is the page-->
+<div data-role="page">
+   <!--Header content-->
+   <div data-role="header" class="app-header app-header-bck">
+   <div class="ui-grid-b" id="menu-sign">
+      <div class="ui-block-a">
+        <a href="#sidemenu"><img class="menu-sign" src="images/menu.png" width="35" height="28"  alt="Menu icon"/></a> 
+      </div>
+      <div class="ui-block-b" id="app-logo">
+      <img src="images/gras-savoye-main-logo.png" width="225" height="155"  alt=""/> 
+      </div>
+    </div>
+   </div><!--/Header content-->
+   
+   <!--This is side menu part-->
+   <div data-role="panel" id="sidemenu" data-position-fixed="true" class="blue sidemenu">
+   <h2 class="md-wht-tit centerit">Gras Savoye Egypte</h2>
+    <!--Menu list-->
+    <ul data-role="listview" data-icon="false" class="menulist">
+     <li><a href="main.html" rel="external" class="home-ic">Home</a></li>
+     <li><a href="gsserviceplatform.html" rel="external" class="serv-ic">GS Service Platform</a></li>
+     <li><a href="customerservice.html" rel="external" class="pep-ic">Customer Service</a></li>
+     <li><a href="autoclaims.html" rel="external" class="car-ic">Auto Claims</a></li>
+     <li><a href="autoworkshops.html" rel="external" class="book-ic">Auto Workshops</a></li>
+     <li><a href="find.html" rel="external" class="loc-ic">Find Us</a></li>
+     <li><a href="contact.html" rel="external" class="mail-ic">Contact Us</a></li>
+    </ul>
+   </div><!--/side menu part-->
+
+  <!--body content-->
+  <div data-role="content">
+       <p class="sms-wht-tit">
+         Protect Yourself and your family With the Right travel Insurance Coverage
+       </p>
+        <div data-role="content" class="white roundedc sec-space ui-content" role="main">
+        <div class="hf-roundedc box-header green centerit md-wht-tit"><p style="font-size:15px;">You will get best quotes from market to choose from.</p></div>
+        <form id="formdata" data-ajax="false">
+            <div>
+            <label for="name">Name*</label>
+            <input type="text" name="name" id="name" required>
+            </div>
+            <div><label for="name" class="error" generated="true"></label></div>
+
+            <div>
+            <label for="mobile">Mobile*</label>
+            <input type="text" name="mobile" id="mobile" required>
+            </div>
+            <div><label for="mobile" class="error" generated="true"></label></div>
+
+            <div>  
+            <label for="email">Email*</label>
+            <input type="email" name="email" id="email" required>
+            </div>
+            <div><label for="email" class="error" generated="true"></label></div>
+
+            <div>
+            <label for="passport">Passport Number*</label>
+            <input type="number" name="passport" id="passport" required>
+            </div>
+            <div><label for="passport" class="error" generated="true"></label></div>
+
+            <div>
+            <label for="dof">Date of birth*</label>
+            <input type="date" name="dof" id="dof" required>
+            </div>
+            <div><label for="dof" class="error" generated="true"></label></div>
+
+            <div>
+            <label for="depdate">Departure Date*</label>
+            <input type="date" name="depdate" id="depdate" required>
+            </div>
+            <div><label for="depdate" class="error" generated="true"></label></div>
+
+            <div>
+            <label for="period">Periods*</label>
+            <select id="period" name="period" required>
+              <option value="">Select one</option>
+              <option value="5 days">5 days</option>
+              <option value="7 days">7 days</option>
+              <option value="10 days">10 days</option>
+              <option value="15 days">15 days</option>
+              <option value="21 days">21 days</option>
+              <option value="30 days">30 days</option>
+              <option value="60 days">60 days</option>
+              <option value="90 days">90 days</option>
+              <option value="180 days">180 days</option>
+              <option value="1 year">1 year</option>
+            </select>
+            </div>
+            <div><label for="period" class="error" generated="true"></label></div>
+
+            <div>
+            <label for="plan">Plan Type*</label>
+            <select id="plan" name="plan" required>
+              <option value="">Select one</option>              
+              <option value="Platinum (WorldWide) 75,000 EGP">Platinum (WorldWide) 75,000 EGP</option>
+              <option value="Gold (WorldWide Schengen) 50,000 EGP">Gold (WorldWide Schengen) 50,000 EGP</option>
+              <option value="Silver (WorldWide excluding Schengen) 25,000 EGP">Silver (WorldWide excluding Schengen) 25,000 EGP</option>
+            </select> 
+            </div>
+            <div><label for="plan" class="error" generated="true"></label></div>
+
+            <div>
+            <label for="coverage">Coverage*</label>
+            <select id="coverage" name="coverage" required>
+              <option value="">Select one</option>              
+              <option value="WorldWide Including USA, Canada And Australia">WorldWide Including USA, Canada And Australia</option>
+              <option value="WorldWide Excluding USA, Canada And Australia">WorldWide Excluding USA, Canada And Australia</option>
+            </select> 
+            </div>
+            <div><label for="coverage" class="error" generated="true"></label></div>
+
+           <div>
+            <label for="personalaccident">Include personal accident (optional)</label>
+            <select id="personalaccident" name="personalaccident">
+                <option value="No">No</option>         
+                <option value="Yes">Yes</option>
+            </select>  
+            </div>
+            <div><label for="personalaccident" class="error" generated="true"></label></div>
+
+            <button type="submit" value="Submit">Get Your Quote</button>
+            <br />
+        </form>
+        </div>
+                    <div id="response"></div>
+        </div>
+  <!--/body content-->
+</div><!--/page-->
+<!--Ajax Request-->
+<script>
+$(document).ready(function () {
+
+  // preloader
+    $('#pre')
+    .hide()  // Hide it initially
+    .ajaxStart(function() {
+        $(this).show();
+    })
+    .ajaxStop(function() {
+        $(this).hide();
+    });  
+
+
+    $('#formdata').validate({ // initialize the plugin
+        rules: {
+        mobile: {
+          digits: true,
+          minlength: 8,
+          maxlength: 11
+        }},
+        submitHandler: function (form) {
+          // Grab the form data
+          var name = $.trim($("#name").val());
+          var mobile = $.trim($("#mobile").val());
+          var email = $.trim($("#email").val());
+          var passport = $.trim($("#passport").val());
+          var dof = $.trim($("#dof").val());
+          var depdate = $.trim($("#depdate").val());
+          var period = $.trim($("#period").val());
+          var plan = $.trim($("#plan").val());
+          var coverage = $.trim($("#coverage").val());
+          var personalaccident = $.trim($("#personalaccident").val());
+          //console.log(name+"/"+mobile+"/"+email+"/"+passport+"/"+dof+"/"+depdate+"/"+period+"/"+plan+"/"+coverage+"/"+personalaccident);return;
+          $.ajax({
+          type:"POST",
+          url:"http://gsegypte.com/travelinsurances/add_mobile/"+name+"/"+mobile+"/"+email+"/"+passport+"/"+dof+"/"+depdate+"/"+period+"/"+plan+"/"+coverage+"/"+personalaccident,
+          cache: false,
+          dataType: "text",
+          success: onSuccess
+          });
+        // error
+        $("#response").ajaxError(function(event, request, settings, exception) {
+          $("#response").html("Error Calling: " + settings.url + "<br />HTTP Code: " + request.status);
+        }); 
+        // Success
+        function onSuccess(data)
+        {
+            //$("#response").html("Result: " + data);
+            window.location = "thanks.html";
+        }
+
+         return false; // blocks redirect after submission via ajax
+        }
+    });
+});
+</script>
+</body>
+</html>

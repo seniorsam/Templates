@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grassavoye mobile application v.1</title>
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.css">
+<link href="jquery-mobile/stylesheet.css" rel="stylesheet" type="text/css">
+<!-- Include the jQuery library -->
+<script src="jquery-mobile/jquery-1.11.3.min.js"></script>
+<script src="jquery-mobile/jquery.validate.min.js"></script>
+<!-- Include the jQuery Mobile library -->
+<script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<!--this is the page-->
+<div data-role="page">
+   <!--Header content-->
+   <div data-role="header" class="app-header app-header-bck">
+   <div class="ui-grid-b" id="menu-sign">
+      <div class="ui-block-a">
+        <a href="#sidemenu"><img class="menu-sign" src="images/menu.png" width="35" height="28"  alt="Menu icon"/></a> 
+      </div>
+      <div class="ui-block-b" id="app-logo">
+      <img src="images/gras-savoye-main-logo.png" width="225" height="155"  alt=""/> 
+      </div>
+    </div>
+   </div><!--/Header content-->
+   
+   <!--This is side menu part-->
+   <div data-role="panel" id="sidemenu" data-position-fixed="true" class="blue sidemenu">
+   <h2 class="md-wht-tit centerit">Gras Savoye Egypte</h2>
+    <!--Menu list-->
+    <ul data-role="listview" data-icon="false" class="menulist">
+     <li><a href="main.html" rel="external" class="home-ic">Home</a></li>
+     <li><a href="gsserviceplatform.html" rel="external" class="serv-ic">GS Service Platform</a></li>
+     <li><a href="customerservice.html" rel="external" class="pep-ic">Customer Service</a></li>
+     <li><a href="autoclaims.html" rel="external" class="car-ic">Auto Claims</a></li>
+     <li><a href="autoworkshops.html" rel="external" class="book-ic">Auto Workshops</a></li>
+     <li><a href="find.html" rel="external" class="loc-ic">Find Us</a></li>
+     <li><a href="contact.html" rel="external" class="mail-ic">Contact Us</a></li>
+    </ul>
+   </div><!--/side menu part-->
+
+  <!--body content-->
+  <div data-role="content">
+       <p class="sms-wht-tit">
+         Afraid to lose your car ? <br />
+          Insure your car NOW to get theft, accident and fire protection.
+       </p>
+        <div data-role="content" class="white roundedc sec-space ui-content" role="main">
+        <div class="hf-roundedc box-header green centerit md-wht-tit"><p style="font-size:15px;">Insurance Coverage Details</p></div>
+        <form id="formdata" data-ajax="false">
+            <div>
+            <label for="name">Name*</label>
+            <input type="text" name="name" id="name" required>
+            </div>
+            <div><label for="name" class="error" generated="true"></label></div>
+
+            <div>
+            <label for="mobile">Mobile*</label>
+            <input type="text" name="mobile" id="mobile" required>
+            </div>
+            <div><label for="mobile" class="error" generated="true"></label></div>
+
+
+            <div>  
+            <label for="email">Email*</label>
+            <input type="email" name="email" id="email" required>
+            </div>
+            <div><label for="email" class="error" generated="true"></label></div>
+
+            <div>
+            <label for="preferred">Do you have preferred insurance company*</label>
+            <select id="preferred" name="preferred" required>
+              <option value="">Select one</option>
+              <option value="Misr Insurance Company">Misr Insurance Company</option>
+              <option value="Allianz Insurance Company">Allianz Insurance Company</option>
+              <option value="Egyptian Takaful">Egyptian Takaful</option>
+              <option value="Arab Misr Insurance Group (GIG)">Arab Misr Insurance Group (GIG)</option>
+              <option value="Arab Orient Takaful Insurance Company">Arab Orient Takaful Insurance Company</option>
+              <option value="Chartis Insurance Company">Chartis Insurance Company</option>
+              <option value="Iskan Insurance Company">Iskan Insurance Company</option>
+              <option value="Wethaq Insurance Company">Wethaq Insurance Company</option>
+              <option value="Tokyo Marine Insurance Company">Tokyo Marine Insurance Company</option>
+              <option value="Nile Takaful Egyptian Insurance Company">Nile Takaful Egyptian Insurance Company</option>
+              <option value="Suze Canal Insurance Company">Suze Canal Insurance Company</option>
+            </select>
+           </div>
+            <div><label for="preferred" class="error" generated="true"></label></div>
+
+            <div>
+            <label for="autobrand">Auto Brand*</label>
+            <select  name="autobrand" id="autobrand" required>
+              <option value="">Select one</option>
+              <option value="1">Alfa Romeo</option>
+              <option value="2">Audi</option>
+              <option value="3">Bmw</option>
+              <option value="4">Bedford</option>
+              <option value="5">Barada</option>
+              <option value="6">Brilliance</option>
+              <option value="7">Chery</option>
+              <option value="8">Chevrolet</option>
+              <option value="9">Citroen</option>
+              <option value="10">Daewoo</option>
+              <option value="11">Daihtsu</option>
+              <option value="12">Dodge</option>
+              <option value="13">Fiat</option>
+              <option value="14">Ford</option>
+              <option value="15">Great wall</option>
+              <option value="16">Honda</option>
+              <option value="17">Hyundai</option>
+              <option value="18">Isuzu</option>
+              <option value="19">Kia</option>
+              <option value="20">Mitsubishi</option>
+              <option value="21">Wolks Wagen</option>
+              <option value="22">Skoda</option>
+              <option value="23">Mercedes</option>
+              <option value="24">Peugot</option>
+              <option value="25">Renault</option>
+              <option value="-1">Other, please write in Model</option>
+             </select> 
+            </div>
+            <div><label for="autobrand" class="error" generated="true"></label></div>
+
+            <div>
+            <label for="model">Model</label>
+            <input type="text" name="model" id="model">            
+            </div>
+            <div><label for="model" class="error" generated="true"></label></div>
+
+            <div>            
+            <label for="manufacture">Manufacture Year*</label>
+            <input type="text" name="manufacture" id="manufacture" required>            
+            </div>
+            <div><label for="manufacture" class="error" generated="true"></label></div>
+
+            <div>
+            <label for="carmarket">Car Market Value*</label>
+            <input type="text" name="carmarket" id="carmarket" required>            
+            </div>
+            <div><label for="carmarket" class="error" generated="true"></label></div>
+            
+            <button type="submit" value="Submit">Get Your Quote</button>
+
+        </form>
+        </div>
+        <div id="response"></div>
+        <div data-role="content"> 
+
+        <h2 class="md-gr-bck-tit centerit">Comprehensive car insurance</h2>
+        <p>Comprehensive coverage can help pay for damage to your car  from 
+          vandalism, weather events and accidents involving animals.</p>
+
+        <h2 class="md-gr-bck-tit centerit">Liability Coverage</h2>
+        <p>Many state laws require liability coverage, also known as “property
+          damage/bodily injury.” It can help cover expenses from damaging a vehicle or
+          injuring a person in an accident</p>
+
+        <h2 class="md-gr-bck-tit centerit">Collision coverage</h2>
+        <p>Collision insurance can help pay for damage to your car after an accident
+          involving another vehicle.</p>
+
+        <h2 class="md-gr-bck-tit centerit">Medical payments coverage</h2>
+        <p>Mandatory in some states, med pay can help cover medical costs related to an
+            accident, regardless of who is at fault.</p>
+
+        <h2 class="md-gr-bck-tit centerit">Personal injury protection insurance</h2>
+        <p>Personal injury protection can help defray costs from medical bills and lost 
+            wages as the result of an accident.</p>
+
+        <h2 class="md-gr-bck-tit centerit">Roadside Assistance</h2>
+        <p>This optional auto insurance coverage can help you if you need a tow, run out
+            of gas or get a flat.</p>
+
+        </div>
+        </div>
+  <!--/body content-->
+</div><!--/page-->
+<script>
+$(document).ready(function () {
+
+    $('#formdata').validate({ // initialize the plugin
+        rules: {
+        mobile: {
+          digits: true,
+          minlength: 8,
+          maxlength: 11
+        }
+        },
+        submitHandler: function (form) {
+          // Grab the form data
+          var name   = $.trim($("#name").val());
+          var mobile = $.trim($("#mobile").val());
+          var email  = $.trim($("#email").val());
+          var preferred    = $.trim($("#preferred").val());
+          var autobrand = $.trim($("#autobrand").val());
+
+          if($("#model").val() == ""){
+            var model = "unknown";  
+          }else{var model = $.trim($("#model").val());}
+          
+          var manufacture = $.trim($("#manufacture").val());
+          var carmarket = $.trim($("#carmarket").val());
+          $.ajax({
+          type:"POST",
+          url:"http://gsegypte.com/autoinsurances/add_mobile/"+name+"/"+mobile+"/"+email+"/"+preferred+"/"+autobrand+"/"+model+"/"+manufacture+"/"+carmarket,
+          cache: false,
+          success: onSuccess
+          });
+        // error
+        $("#response").ajaxError(function(event, request, settings, exception) {
+          $("#response").html("Error Calling: " + settings.url + "<br />HTTP Code: " + request.status);
+        }); 
+        // Success
+        function onSuccess(data)
+        {
+            //$("#response").html("Result: " + data);
+            window.location = "thanks.html";
+        }
+
+         return false; // blocks redirect after submission via ajax
+        }
+    });
+});
+</script>
+</body>
+</html>

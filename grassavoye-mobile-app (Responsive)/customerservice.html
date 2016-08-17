@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grassavoye mobile application v.1</title>
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.css">
+<link href="jquery-mobile/stylesheet.css" rel="stylesheet" type="text/css">
+<!-- Include the jQuery library -->
+<script src="jquery-mobile/jquery-1.11.3.min.js"></script>
+<!-- Include the jQuery Mobile library -->
+<script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<!--this is the customer services page-->
+<div data-role="page" id="customerservices">
+   <!--Header content-->
+   <div data-role="header" class="app-header app-header-bck">
+   <div class="ui-grid-b" id="menu-sign">
+      <div class="ui-block-a">
+        <a href="#sidemenu"><img class="menu-sign" src="images/menu.png" width="35" height="28"  alt="Menu icon"/></a> 
+      </div>
+      <div class="ui-block-b" id="app-logo">
+      <img src="images/gras-savoye-main-logo.png" width="225" height="155"  alt=""/> 
+      </div>
+    </div>
+   </div><!--/Header content-->
+   
+   <!--This is side menu part-->
+   <div data-role="panel" id="sidemenu" data-position-fixed="true" class="blue sidemenu">
+   <h2 class="md-wht-tit centerit">Gras Savoye Egypte</h2>
+    <!--Menu list-->
+    <ul data-role="listview" data-icon="false" class="menulist">
+     <li><a href="main.html" rel="external" class="home-ic">Home</a></li>
+     <li><a href="gsserviceplatform.html" rel="external" class="serv-ic">GS Service Platform</a></li>
+     <li><a href="customerservice.html" rel="external" class="pep-ic">Customer Service</a></li>
+     <li><a href="autoclaims.html" rel="external" class="car-ic">Auto Claims</a></li>
+     <li><a href="autoworkshops.html" rel="external" class="book-ic">Auto Workshops</a></li>
+     <li><a href="find.html" rel="external" class="loc-ic">Find Us</a></li>
+     <li><a href="contact.html" rel="external" class="mail-ic">Contact Us</a></li>
+    </ul>
+   </div><!--/side menu part-->
+
+  <!--body content-->
+  <div data-role="content">
+   <h2 class="dot-md-wht-tit">Customer Service</h2>
+     <div data-role="content" class="white sec-space fluid">
+      <h3 class="md-gr-tit">Customer service main contact:</h3>
+      <!--Green list-->
+      <div data-role="content">
+      <ul id="sp-list" data-role="listview" data-icon="false">
+       <li><a href="#">Khaled Agaty</a>    <span class="phone ui-li-count"><a class="blue-a" href="tel:0122 373 4928">0122 373 4928</a></span></li>
+       <li><a href="#">Shady Farouk</a>    <span class="phone ui-li-count"><a class="blue-a" href="tel:0122 022 6621">0122 022 6621</a></span></li>
+       <li><a href="#">Mohamed Hussien</a> <span class="phone ui-li-count"><a class="blue-a" href="tel:0127 300 5119">0127 300 5119</a></span></li>
+       <li><a href="#">Martha Tharwat</a>  <span class="phone ui-li-count"><a class="blue-a" href="tel:0122 390 1711">0122 390 1711</a></span></li>       
+      </ul>
+      </div>
+     </div>
+  </div>
+  <!--/body content-->
+</div><!--/customer services page-->
+</body>
+</html>

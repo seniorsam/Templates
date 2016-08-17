@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grassavoye mobile application v.1</title>
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.css">
+<link href="jquery-mobile/stylesheet.css" rel="stylesheet" type="text/css">
+<!-- Include the jQuery library -->
+<script src="jquery-mobile/jquery-1.11.3.min.js"></script>
+<!-- Include the jQuery Mobile library -->
+<script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<!--this is the page-->
+<div data-role="page">
+   <!--Header content-->
+   <div data-role="header" class="app-header app-header-bck">
+   <div class="ui-grid-b" id="menu-sign">
+      <div class="ui-block-a">
+        <a href="#sidemenu"><img class="menu-sign" src="images/menu.png" width="35" height="28"  alt="Menu icon"/></a> 
+      </div>
+      <div class="ui-block-b" id="app-logo">
+      <img src="images/gras-savoye-main-logo.png" width="225" height="155"  alt=""/> 
+      </div>
+    </div>
+   </div><!--/Header content-->
+   
+   <!--This is side menu part-->
+   <div data-role="panel" id="sidemenu" data-position-fixed="true" class="blue sidemenu">
+   <h2 class="md-wht-tit centerit">Gras Savoye Egypte</h2>
+    <!--Menu list-->
+    <ul data-role="listview" data-icon="false" class="menulist">
+     <li><a href="main.html" rel="external" class="home-ic">Home</a></li>
+     <li><a href="gsserviceplatform.html" rel="external" class="serv-ic">GS Service Platform</a></li>
+     <li><a href="customerservice.html" rel="external" class="pep-ic">Customer Service</a></li>
+     <li><a href="autoclaims.html" rel="external" class="car-ic">Auto Claims</a></li>
+     <li><a href="autoworkshops.html" rel="external" class="book-ic">Auto Workshops</a></li>
+     <li><a href="find.html" rel="external" class="loc-ic">Find Us</a></li>
+     <li><a href="contact.html" rel="external" class="mail-ic">Contact Us</a></li>
+    </ul>
+   </div><!--/side menu part-->
+
+  <!--body content-->
+  <div data-role="content" class="auto-workshops">
+    <h2 class="dot-md-wht-tit">Auto Workshop</h2>
+
+        <form class="ui-filterable">
+          <input id="myFilter" data-type="search">
+        </form>
+        <ul class="inner-p-searchlist" data-filter="true" data-input="#myFilter" data-inset="true">
+          <div class="inner-p-himg-wrap"><img src="images/wasa2k-573.png" alt="el mashrek"></div>
+          <div class="inner-p-title"><h3 class="header-tit">وثاق للتأمين التكافلى</h3></div>
+
+          <li>
+            <div data-role="collapsible" class="inner-p-coll" data-collapsed-icon="carat-d" data-iconpos="right">
+            <h4>مركز خدمة تكنو بوش <br />الحرفين - خلف السوبر جيت</h4>
+            <ul>
+              <li>مركز خدمة تكنو بوش <br /> الماركة: هيونداى - فورد - مازدا <br />مهندس أحمد محمد الشحات 01001400940  </li>
+            </ul>
+            </div>
+          </li>
+
+          <li>
+            <div data-role="collapsible" class="inner-p-coll" data-collapsed-icon="carat-d" data-iconpos="right">
+            <h4>الكويت و البلاد العربية - الدقى</h4>
+            <ul>
+              <li>الكويت و البلاد العربية - الدقى <br />الماركة: هيونداى - شيفروليه - فولفو - اسبرانزا <br />مهندس خالد 01221375969</li>
+            </ul>
+            </div>
+          </li>
+
+          <li>
+            <div data-role="collapsible" class="inner-p-coll" data-collapsed-icon="carat-d" data-iconpos="right">
+            <h4>السبع اوتو سرفيس <br />زهراء المعادى </h4>
+            <ul>
+              <li>السبع اوتو سرفيس <br />الماركة: نيسان و كيا <br />مهندس ايمن كرم 01110009908 <br /> مهندس ايمن عبد المتجلى 01099919100</li>
+            </ul>
+            </div>
+          </li>
+
+          <li>
+            <div data-role="collapsible" class="inner-p-coll" data-collapsed-icon="carat-d" data-iconpos="right">
+            <h4>شركة الرزق التجارية <br />الكيلو 24 طريق مصر اسكندرية الصحراوى</h4>
+            <ul>
+              <li>شركة الرزق التجارية <br />الماركة: تويوتا - دايهاتسو <br />مهندس محمد سامى 01065503230 - مهندس محمد سيد 01065547350 </li>
+            </ul>
+            </div>
+          </li>
+
+          <li>
+            <div data-role="collapsible" class="inner-p-coll" data-collapsed-icon="carat-d" data-iconpos="right">
+            <h4>مركز اى.تى.اوتو - القطامية </h4>
+            <ul>
+              <li>مركز اى.تى.اوتو - القطامية <br />الماركة: شيفروليه - اوبل </li>
+            </ul>
+            </div>
+          </li>
+          
+          <li>
+            <div data-role="collapsible" class="inner-p-coll" data-collapsed-icon="carat-d" data-iconpos="right">
+            <h4>اليكس اوتو سيرفيس <br />ك 27 طريق اسكندرية القاهرة بجوار وحدة مرور النقل الثقيل-العامرية</h4>
+            <ul>
+              <li>اليكس اوتو سيرفيس <br />الماركة: فورد - ام جى - جميع السيارات <br />مهندس على 01145126243</li>
+            </ul>
+            </div>
+          </li>
+          
+        </ul>
+      
+  </div>
+  <!--/body content-->
+</div><!--/page-->
+</body>
+</html>

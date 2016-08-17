@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grassavoye mobile application v.1</title>
+<!--required external css sheets-->
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.css">
+<link href="jquery-mobile/stylesheet.css" rel="stylesheet" type="text/css">
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- Include the jQuery Mobile library -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+ <!--Here's everything start :)-->
+<div data-role="page" id="main_page">
+   <!--Header content-->
+   <div data-role="header" class="app-header app-header-bck">
+   <div class="ui-grid-b" id="menu-sign">
+    <div class="ui-block-a">
+      <a href="#sidemenu"><img class="menu-sign" src="images/menu.png" width="35" height="28"  alt="Menu icon"/></a> 
+      </div>
+      <div class="ui-block-b" id="app-logo">
+      <img src="images/gras-savoye-main-logo.png" width="225" height="155"  alt=""/> 
+      </div>
+    </div>
+   </div><!--/Header content-->
+
+   <!--This is side menu part-->
+   <div data-role="panel" id="sidemenu" data-position-fixed="true" class="blue sidemenu">
+   <h2 class="md-wht-tit centerit">Gras Savoye Egypte</h2>
+    <!--Menu list-->
+    <ul data-role="listview" data-icon="false" class="menulist">
+     <li><a href="#" class="home-ic">Home</a></li>
+     <li><a href="#" class="serv-ic">List Item</a></li>
+     <li><a href="#" class="pep-ic">List Item</a></li>
+     <li><a href="#" class="car-ic">List Item</a></li>
+     <li><a href="#" class="book-ic">List Item</a></li>
+     <li><a href="#" class="face-ic">List Item</a></li>
+     <li><a href="#" class="loc-ic">List Item</a></li>
+     <li><a href="#" class="mail-ic">List Item</a></li>
+    </ul>
+   </div><!--/side menu part-->
+
+  <!--body content-->
+  <div data-role="content">
+  
+   <h1 class="lg-wht-tit">Text style</h1>
+   <h1 class="lg-wht-tit2">Egypt / Cairo</h1>
+   <p>
+     simply dummy text of the printing and typesetting industry.
+   </p>
+   <p class="sm-gr-txt">
+     simply dummy text of the printing and typesetting industry.
+   </p>
+   <h2 class="md-wht-tit">Text style</h2>
+   <h2 class="md-gr-tit">Text style</h2>  
+   <h2 class="md-gr-bck-tit centerit">Text style</h2>  
+   <p class="sms-wht-tit">
+     simply dummy text of the printing and typesetting industry.
+   </p>
+   <h1 class="dot-lg-wht-tit">Text style</h1>
+   <h2 class="dot-md-wht-tit">Text style</h2>
+   <p>
+     simply dummy text of the printing and typesetting industry.
+   </p>   
+   
+  </div>
+  <!--/body content-->
+  
+   <!--footer content-->
+   <div data-role="footer" class="blue">
+     <h4></h4>
+   </div>
+   <!--/footer content-->
+</div>
+<!--End of the main page-->
+</body>
+</html>

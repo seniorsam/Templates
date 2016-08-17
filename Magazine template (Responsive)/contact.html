@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact us page</title>
+<meta name="description" content="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book">
+<meta name="author" content="sameh abdel moneim">
+<meta name="keywords" content="HTML,CSS,JavaScript,php">
+<!--the style sheet files links-->
+<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Squada+One' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="stylesheet" href="css/animate.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- 
+- header part [logo - links]
+-->
+
+<nav id="navigation" class="navbar mynav navbar-fixed-top">
+      <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+      <div class="container">
+      	<!--this is main logo of the website-->
+      	<div class="main-logo col-lg-2">
+        	<a href="index.html"><img src="images/main-logo2.png" alt="website main logo"></a>
+        </div>
+        
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse navigation-links" id="bs-example-navbar-collapse-6">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a class="active-li" href="contact.html">Contact</a></li>
+          </ul>
+
+          <ul id="social-media" class="nav navbar-nav pull-right">
+          	<li class="pt"><a href="#"></a></li>
+          	<li class="li"><a href="#"></a></li>
+          	<li class="tw"><a href="#"></a></li>
+          	<li class="yt"><a href="#"></a></li>
+          	<li class="fb"><a href="#"></a></li>
+          </ul>
+
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+<div class="nav-over"></div>    
+
+<!--
+- title bar
+-->
+
+<section class="container-fluid title-bar padding-0">
+	<div class="container">
+		<h2 class="white-lg-title2">Lorem Ipsum is simply dummy text</h2>
+	</div>
+</section>
+
+<!--
+- body contents part
+-->
+
+
+<!--
+- map part
+-->
+
+<section class="container-fluid map-part padding-0">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.30943582457!2d-79.37805800000001!3d43.7182412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C+ON%2C+Canada!5e0!3m2!1sen!2seg!4v1436332210597" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
+
+<!--
+- contact us part  
+-->
+<section class="container-fluid contact-form-part-wrapper">
+  <div class="container">
+    <h2 class="white-lg-title">Send us a message</h2><br>
+    <!--contact form-->
+    <div class="col-lg-12 contact-form">
+      <form action="contact.php" method="post">
+        <div class="form-group">
+          <input type="name" class="form-control myform-control" id="exampleInputEmail1" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control myform-control" id="exampleInputEmail1" placeholder="Your email" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control mytext-area" rows="10" placeholder="Your message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Send</button>
+      </form>
+    </div>
+  </div><br>
+</section>
+
+
+<!--
+- footer section
+-->
+<section class="footer-wrapper container-fluid">
+	<div class="footer container">
+		<!--footer left col -->
+		<div class="col-lg-4">
+			<h4 class="title-2"><span class="glyphicon glyphicon-stop"></span> About us:</h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</div>
+
+		<!--footer mid col -->
+		<div class="col-lg-4">
+		    <h4 class="title-2"><span class="glyphicon glyphicon-stop"></span> Latest:</h4>
+			<ul class="list-group">
+			  <li><a href="#">Cras justo odio</a></li>
+			  <li><a href="#">Dapibus ac facilisis in</a></li>
+			  <li><a href="#">Morbi leo risus</a></li>
+			  <li><a href="#">Porta ac consectetur ac</a></li>
+			  <li><a href="#">Vestibulum at eros</a></li>
+			</ul>
+		</div>
+		
+		<!--footer right col -->
+		<div class="col-lg-4">
+		    <h4 class="title-2"><span class="glyphicon glyphicon-stop"></span> Contact us:</h4>
+			<ul class="list-group">
+			  <li><span class="icon glyphicon glyphicon-map-marker"></span> Cras justo odio Cras justo odio Cras justo odio Cras justo odio Cras justo odio</li>
+			  <li><span class="icon glyphicon glyphicon-phone"></span> 000-000-0000</li>
+			  <li><span class="icon glyphicon glyphicon-phone"></span> 000-000-0000</li>
+			</ul>
+		</div>
+	</div>
+
+<!--
+- All rights reserved for sameh abdel moneim
+-->
+    <div class="copyrights">
+    	<h5>
+    		All rights reserved for <a href="#">sameh abdel moneim</a>
+    	</h5>
+    </div>
+</section>
+<!--
+- footer section ends here
+-->
+<!--the javascript files links-->
+<script>
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/SmoothScroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+</body>
+</html>

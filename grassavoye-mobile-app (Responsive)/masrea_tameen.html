@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grassavoye mobile application v.1</title>
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.css">
+<link href="jquery-mobile/stylesheet.css" rel="stylesheet" type="text/css">
+<!-- Include the jQuery library -->
+<script src="jquery-mobile/jquery-1.11.3.min.js"></script>
+<!-- Include the jQuery Mobile library -->
+<script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<!--this is the page-->
+<div data-role="page">
+   <!--Header content-->
+   <div data-role="header" class="app-header app-header-bck">
+   <div class="ui-grid-b" id="menu-sign">
+      <div class="ui-block-a">
+        <a href="#sidemenu"><img class="menu-sign" src="images/menu.png" width="35" height="28"  alt="Menu icon"/></a> 
+      </div>
+      <div class="ui-block-b" id="app-logo">
+      <img src="images/gras-savoye-main-logo.png" width="225" height="155"  alt=""/> 
+      </div>
+    </div>
+   </div><!--/Header content-->
+   
+   <!--This is side menu part-->
+   <div data-role="panel" id="sidemenu" data-position-fixed="true" class="blue sidemenu">
+   <h2 class="md-wht-tit centerit">Gras Savoye Egypte</h2>
+    <!--Menu list-->
+    <ul data-role="listview" data-icon="false" class="menulist">
+     <li><a href="main.html" rel="external" class="home-ic">Home</a></li>
+     <li><a href="gsserviceplatform.html" rel="external" class="serv-ic">GS Service Platform</a></li>
+     <li><a href="customerservice.html" rel="external" class="pep-ic">Customer Service</a></li>
+     <li><a href="autoclaims.html" rel="external" class="car-ic">Auto Claims</a></li>
+     <li><a href="autoworkshops.html" rel="external" class="book-ic">Auto Workshops</a></li>
+     <li><a href="find.html" rel="external" class="loc-ic">Find Us</a></li>
+     <li><a href="contact.html" rel="external" class="mail-ic">Contact Us</a></li>
+    </ul>
+   </div><!--/side menu part-->
+
+  <!--body content-->
+  <div data-role="content" class="auto-workshops">
+    <h2 class="dot-md-wht-tit">Auto Workshop</h2>
+
+        <form class="ui-filterable">
+          <input id="myFilter" data-type="search">
+        </form>
+        <ul class="inner-p-searchlist" data-filter="true" data-input="#myFilter" data-inset="true">
+          <div class="inner-p-himg-wrap"><img src="images/elmasrya-573-x-146.png" alt="el mashrek"></div>
+          <div class="inner-p-title"><h3 class="header-tit">المصرية للتأمين التكافلى </h3></div>
+
+          <li>
+            <div data-role="collapsible" class="inner-p-coll" data-collapsed-icon="carat-d" data-iconpos="right">
+            <h4>الأقصى للتوكيلات التجارية <br /> زهراء المعادى</h4>
+            <ul>
+              <li>الأقصى للتوكيلات التجارية <br />الماركة: سكودا - هيونداى - فيات <br />مهندس حسنى 01001410579</li>
+            </ul>
+            </div>
+          </li>
+
+          <li>
+            <div data-role="collapsible" class="inner-p-coll" data-collapsed-icon="carat-d" data-iconpos="right">
+            <h4>السبع اوتو سرفيس <br />زهراء المعادى</h4>
+            <ul>
+              <li>السبع اوتو سرفيس <br />الماركة: نيسان و كيا <br />مهندس ايمن كرم 01110009908 <br /> مهندس ايمن عبد المتجلى 01099919100</li>
+            </ul>
+            </div>
+          </li>
+
+          <li>
+            <div data-role="collapsible" class="inner-p-coll" data-collapsed-icon="carat-d" data-iconpos="right">
+            <h4>مركز خدمة اوتو ماستر <br />شارع الشهيد (المخيم الدائم سابقا) المنطقة الصناعية - بلوك 9 - قطعة 6 الحى السادس بمدينة نصر </h4>
+            <ul>
+              <li>مركز خدمة اوتو ماستر <br />الماركة: شيفروليه - اوبل <br />مهندس معتز 01224584692 - 01000632781</li>
+            </ul>
+            </div>
+          </li>
+
+          <li>
+            <div data-role="collapsible" class="inner-p-coll" data-collapsed-icon="carat-d" data-iconpos="right">
+            <h4>مركز خدمة ايجى اوتو <br />ك 84 طريق القاهرة الإسكندرية الزراعى - دفره الطريق السريع - طنطا </h4>
+            <ul>
+              <li>مركز خدمة ايجى اوتو <br />الماركة: هيونداى - جلى ايمى جراند <br />مهندس عبد الحميد 01090108018 </li>
+            </ul>
+            </div>
+          </li>
+
+          <li>
+            <div data-role="collapsible" class="inner-p-coll" data-collapsed-icon="carat-d" data-iconpos="right">
+            <h4>المنصور للسيارات <br />الصحراوى + طنطا + أسيوط + اسكندرية</h4>
+            <ul>
+              <li>المنصور للسيارات <br />الماركة: شيفروليه - اوبل <br />مهندس محمد زكريا</li>
+            </ul>
+            </div>
+          </li>
+          
+          <li>
+            <div data-role="collapsible" class="inner-p-coll" data-collapsed-icon="carat-d" data-iconpos="right">
+            <h4>الشركة الهندسية للسيارات <br />ك 27 طريق اسكندرية القاهرة - مرغم </h4>
+            <ul>
+              <li>الشركة الهندسية للسيارات <br />الماركة: نيسان - هيونداى <br />مهندس محمد السيد 01099925002</li>
+            </ul>
+            </div>
+          </li>
+          
+          <li>
+            <div data-role="collapsible" class="inner-p-coll" data-collapsed-icon="carat-d" data-iconpos="right">
+            <h4>المتحده لإصلاح السيارات <br />طريق الإسكندرية القاهرة الصحراوى بعد كوبرى مرغم </h4>
+            <ul>
+              <li>المتحده لإصلاح السيارات <br />الماركة: هيونداى - فيات <br />مهندس ايمن جابر 01099922760 </li>
+            </ul>
+            </div>
+          </li>
+          
+          <li>
+            <div data-role="collapsible" class="inner-p-coll" data-collapsed-icon="carat-d" data-iconpos="right">
+            <h4>اليكس اوتو سيرفيس <br />ك 27 طريق اسكندرية القاهرة بجوار وحدة مرور النقل الثقيل-العامرية</h4>
+            <ul>
+              <li>اليكس اوتو سيرفيس <br />الماركة: فورد - ام جى - جميع السيارات <br />مهندس على 01145126243</li>
+            </ul>
+            </div>
+          </li>
+          
+        </ul>
+      
+  </div>
+  <!--/body content-->
+</div><!--/page-->
+</body>
+</html>

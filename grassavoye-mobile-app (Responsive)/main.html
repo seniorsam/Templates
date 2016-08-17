@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grassavoye mobile application v.1</title>
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.css">
+<link href="jquery-mobile/stylesheet.css" rel="stylesheet" type="text/css">
+<!-- Include the jQuery library -->
+<script src="jquery-mobile/jquery-1.11.3.min.js"></script>
+<!-- Include the jQuery Mobile library -->
+<script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<!--Here's everything start :)-->
+<div data-role="page" id="main_page">
+   <!--Header content-->
+   <div data-role="header" class="app-header app-header-bck">
+   <div class="ui-grid-b" id="menu-sign">
+      <div class="ui-block-a">
+        <a href="#sidemenu"><img class="menu-sign" src="images/menu.png" width="35" height="28"  alt="Menu icon"/></a> 
+      </div>
+      <div class="ui-block-b" id="app-logo">
+      <img src="images/gras-savoye-main-logo.png" width="225" height="155"  alt=""/> 
+      </div>
+    </div>
+   </div><!--/Header content-->
+   
+   <!--This is side menu part-->
+   <div data-role="panel" id="sidemenu" data-position-fixed="true" class="blue sidemenu">
+   <h2 class="md-wht-tit centerit">Gras Savoye Egypte</h2>
+    <!--Menu list-->
+    <ul data-role="listview" data-icon="false" class="menulist">
+     <li><a href="main.html" rel="external" class="home-ic">Home</a></li>
+     <li><a href="gsserviceplatform.html" rel="external" class="serv-ic">GS Service Platform</a></li>
+     <li><a href="customerservice.html" rel="external" class="pep-ic">Customer Service</a></li>
+     <li><a href="autoclaims.html" rel="external" class="car-ic">Auto Claims</a></li>
+     <li><a href="autoworkshops.html" rel="external" class="book-ic">Auto Workshops</a></li>
+     <li><a href="find.html" rel="external" class="loc-ic">Find Us</a></li>
+     <li><a href="contact.html" rel="external" class="mail-ic">Contact Us</a></li>
+    </ul>
+   </div><!--/side menu part-->
+
+  <!--body content-->
+  <div data-role="content">
+   <h1 class="lg-wht-tit">Gras Savoye Egypt Insurance Broker</h1>
+   <p>
+    Our mission is to provide to our client in egypt the world class technical
+    capabilities of insurance services of the Gras Savoye Willis partnership
+   </p>
+   <p class="sms-gr-tit">Description</p>
+   <p>
+    In march 2009,Gras Savoye obtained the license to operate as an insurance 
+    broker under the name of Gras savoye Egypte (License n 2 
+    in the register of insurance ...
+  </p>
+  <div data-role="content" class="white sec-space fluid">
+    <a href="#wearesocial"><img src="images/social-icons-pic.png" alt="social media icons page" style="width:100%;height:auto;"></a>
+  </div>
+  </div>
+  <!--/body content-->
+</div><!--/End of the main page-->
+<!--Social media dialouge-->
+<div data-role="page" data-dialog="true" id="wearesocial" class="white">
+  <div data-role="header">
+    <h3 class="md-gr-tit">We are social</h3>
+  </div>
+  <div data-role="content">
+    <div class="ui-grid-d">
+       <div class="ui-block-a">
+        <a href="https://www.linkedin.com/company/gras-savoye-egypte" ><img src="images/linkedin-icon.png" alt=""></a><br>
+      </div>
+      <div class="ui-block-b">
+        <a href="https://twitter.com/GSEgypte" ><img src="images/twitter-icon.png" alt=""></a><br>
+      </div>
+      <div class="ui-block-c">
+        <a href="https://www.facebook.com/grassavoyeegypte"><img src="images/fb-icon.png" alt=""></a><br>
+      </div>
+      <div class="ui-block-d">
+        <a href="contact.html" rel="external" ><img src="images/mail.png" alt=""></a><br>
+      </div>
+      <div class="ui-block-e">
+        <a href="http://www.gsegypte.com/" ><img src="images/link.png" alt=""></a><br>
+      </div>                  
+    </div>
+  </div>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+    // device APIs are available
+    function onDeviceReady() {
+        navigator.splashscreen.hide();
+    }
+    </script>
+</body>
+</html>
