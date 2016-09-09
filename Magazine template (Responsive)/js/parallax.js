@@ -1,1 +1,0 @@
-var header=document.getElementById("header-background-wrapper");window.addEventListener("scroll",function(){var e=-(window.pageYOffset/2);header.style.backgroundPosition="center "+e+"px",console.log(e)},!1);
