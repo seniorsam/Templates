@@ -46,28 +46,4 @@ $(document).ready(function() {
           setTimeout(function(){$('.response').hide().text('')},5000);
     });
   });
-
-  /*
-    Owl slider start
-  */
-
-  $("#main-slider").owlCarousel({
- 
-      navigation : true, // Show next and prev buttons
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true,
-      autoPlay:true 
-  });
-
-   $("#team-slider").owlCarousel({
-
-	  navigation : true, // Show next and prev buttons
-      autoPlay: 3000,
-      items : 3,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
-
-  });
- 
 });
